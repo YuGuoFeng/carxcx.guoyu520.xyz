@@ -7,9 +7,19 @@ use Dcat\Admin\Form;
 use Dcat\Admin\Grid;
 use Dcat\Admin\Show;
 use Dcat\Admin\Http\Controllers\AdminController;
-
+use Dcat\Admin\Layout\Content;
 class WxUserController extends AdminController
 {
+    
+    public function index(Content $Content){
+        return $Content->header("用户列表")
+                    ->body($this->grid());
+    }  
+    
+    public function update($id)
+    {
+        return $this->form()->update($id);
+    }
     /**
      * Make a grid builder.
      *

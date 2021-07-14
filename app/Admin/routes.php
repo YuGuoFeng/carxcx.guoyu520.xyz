@@ -13,5 +13,10 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index');
-
+    // 用户列表
+    $router->resource('wechat/user', 'WxUserController');
+  
+    //二维码
+    $router->resource('wechat/qrcode','WxQrCodeController');
+    
 });

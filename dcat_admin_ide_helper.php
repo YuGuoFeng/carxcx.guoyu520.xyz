@@ -61,8 +61,8 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection radius
      * @property Grid\Column|Collection money
      * @property Grid\Column|Collection update_time
-     * @property Grid\Column|Collection phone
      * @property Grid\Column|Collection deleted_at
+     * @property Grid\Column|Collection phone
      *
      * @method Grid\Column|Collection id(string $label = null)
      * @method Grid\Column|Collection name(string $label = null)
@@ -114,8 +114,8 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection radius(string $label = null)
      * @method Grid\Column|Collection money(string $label = null)
      * @method Grid\Column|Collection update_time(string $label = null)
-     * @method Grid\Column|Collection phone(string $label = null)
      * @method Grid\Column|Collection deleted_at(string $label = null)
+     * @method Grid\Column|Collection phone(string $label = null)
      */
     class Grid {}
 
@@ -172,8 +172,8 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection radius
      * @property Show\Field|Collection money
      * @property Show\Field|Collection update_time
-     * @property Show\Field|Collection phone
      * @property Show\Field|Collection deleted_at
+     * @property Show\Field|Collection phone
      *
      * @method Show\Field|Collection id(string $label = null)
      * @method Show\Field|Collection name(string $label = null)
@@ -225,8 +225,8 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection radius(string $label = null)
      * @method Show\Field|Collection money(string $label = null)
      * @method Show\Field|Collection update_time(string $label = null)
-     * @method Show\Field|Collection phone(string $label = null)
      * @method Show\Field|Collection deleted_at(string $label = null)
+     * @method Show\Field|Collection phone(string $label = null)
      */
     class Show {}
 

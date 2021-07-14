@@ -5,7 +5,7 @@ use Dcat\Admin\Grid;
 use Dcat\Admin\Form;
 use Dcat\Admin\Grid\Filter;
 use Dcat\Admin\Show;
-
+use Dcat\Admin\Layout\Menu;
 /**
  * Dcat-admin - admin builder based on Laravel.
  * @author jqh <https://github.com/jqhph>
@@ -24,3 +24,24 @@ use Dcat\Admin\Show;
  * Admin::js('/packages/prettydocs/js/main.js');
  *
  */
+
+/* Admin::menu(function (Menu $menu) {
+    $menu->add([
+        [
+            'id'            => '1', // 此id只要保证当前的数组中是唯一的即可
+            'title'         => '测试菜单',
+            'icon'          => 'fa-file-text-o',
+            'uri'           => '',
+            'parent_id'     => 0, 
+            'permission_id' => 'test', // 与权限绑定
+            'roles'         => 'test-roles', // 与角色绑定
+        ],  
+        [
+            'id'            => '2', // 此id只要保证当前的数组中是唯一的即可
+            'title'         => '测试菜单2',
+            'icon'          => 'fa-file-text-o',
+            'uri'           => 'test-menu2',
+            'parent_id'     => '1', 
+        ],  
+    ]);
+}); */
