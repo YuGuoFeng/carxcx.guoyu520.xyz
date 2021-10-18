@@ -17,7 +17,7 @@
             <div class="row mb-1">
                 <div class="col-md-5 col-md-offset-3">
                     <div class="input-group">
-                        <input type="text" placeholder="{{ trans('admin.search') }}" class="form-control" id="{{ $searchId }}">
+                        <input type="text" name="{{ $name['location'] }}" placeholder="{{ trans('admin.search') }}" class="form-control" id="{{ $searchId }}">
                         @if($type === 'baidu')
                             <span class="input-group-btn">
                                 <button type="button" class="btn btn-primary btn-flat"><i class="fa fa-search"></i></button>

@@ -50,11 +50,12 @@ class Map extends Field
         Admin::js($js);
     }
 
-    public function __construct($column, $arguments)
+    public function __construct($column, $arguments,$location ='location')
     {
         $this->column['lat'] = (string) $column;
         $this->column['lng'] = (string) $arguments[0];
-
+        $this->column['location'] = $location;
+        
         array_shift($arguments);
 
         $this->label = $this->formatLabel($arguments);

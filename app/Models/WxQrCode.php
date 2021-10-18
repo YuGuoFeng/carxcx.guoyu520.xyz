@@ -12,6 +12,8 @@ class WxQrCode extends Model
     use SoftDeletes;
 
     protected $table = 'wx_qr_code';
-    public $timestamps = false;
+    // public $timestamps = false;
 
+
+    
 }

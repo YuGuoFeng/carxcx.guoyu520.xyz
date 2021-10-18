@@ -2,18 +2,32 @@
 
 namespace App\Admin\Controllers;
 
+use App\Admin\Forms\Qrcode;
 use App\Admin\Repositories\WxQrCode;
 use Dcat\Admin\Form;
 use Dcat\Admin\Grid;
 use Dcat\Admin\Show;
 use Dcat\Admin\Http\Controllers\AdminController;
 use Dcat\Admin\Layout\Content;
+
 class WxQrCodeController extends AdminController
 {
     public function index(Content $Content){
         return $Content->header("用户列表")
                     ->body($this->grid());
-    }  
+    } 
+    
+    
+    public function edit($id,Content $content){
+
+   
+        return $content
+        ->translation($this->translation())
+        ->title($this->title())
+        ->description($this->description()['edit'] ?? trans('admin.edit'))
+        ->body($this->form());
+    }
+
     /**
      * Make a grid builder.
      *
@@ -68,19 +82,37 @@ class WxQrCodeController extends AdminController
      *
      * @return Form
      */
-    protected function form()
-    {
-        return Form::make(new WxQrCode(), function (Form $form) {
-            $form->display('id');
-            $form->text('location');
-            $form->text('lng');
-            $form->text('lat');
-            $form->text('state');
-            $form->text('failure_time');
-            $form->text('radius');
-            $form->text('money');
-            $form->text('add_time');
-            $form->text('update_time');
-        });
+    protected function form(){
+        return Qrcode::make();
     }
+    /* protected function form()
+    {   
+        
+        return Form::make(new WxQrCode(), function (Form $form) {
+
+          
+           
+            $form->display('id');
+            $form->radio('state')->when(1,function(Form $fm){
+                $fm->datetime('failure_time');
+            })->options([
+                0 => '永不失效',
+                1 => '失效时间',
+            ])
+            ->default(0);
+            $form->number('radius');
+            $form->currency('money');
+            $latitude = 'lat';
+            $longitude = 'lng';
+            $label = 'location';
+            $form->map($latitude, $longitude, $label,'location');
+                
+            // dump($form->model()->stat);
+            $form->submitted(function (Form $form) {
+                // 接收表单参数
+                // dump();
+            });
+           
+        });
+    } */
 }

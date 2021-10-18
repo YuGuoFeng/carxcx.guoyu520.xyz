@@ -106,6 +106,9 @@ class AdminController extends Controller
      */
     public function edit($id, Content $content)
     {
+
+        // dd($this->edit($id));
+
         return $content
             ->translation($this->translation())
             ->title($this->title())
@@ -122,6 +125,8 @@ class AdminController extends Controller
      */
     public function create(Content $content)
     {
+       
+
         return $content
             ->translation($this->translation())
             ->title($this->title())

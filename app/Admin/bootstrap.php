@@ -24,7 +24,7 @@ use Dcat\Admin\Layout\Menu;
  * Admin::js('/packages/prettydocs/js/main.js');
  *
  */
-
+Form\Field\Map::requireAssets();
 /* Admin::menu(function (Menu $menu) {
     $menu->add([
         [
