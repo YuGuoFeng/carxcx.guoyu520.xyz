@@ -28,7 +28,7 @@ Route::group(['namespace'=>'Api'],function(){
 
         // 提交表单
         Route::post('form',[WxQrCodeController::class,'form']);
-        // 获取小程序openid
+        // 获取小程序openid 
         Route::get('getWeiOpenId',[UserController::class,'getWeiOpenId']);
 
     });
