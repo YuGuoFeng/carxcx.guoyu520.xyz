@@ -125,8 +125,9 @@ class AdminController extends Controller
      */
     public function create(Content $content)
     {
-       
-
+       /* dump($this->translation());
+       dump($this->title());
+       dump($this->description()['create'] ?? trans('admin.create')); */
         return $content
             ->translation($this->translation())
             ->title($this->title())

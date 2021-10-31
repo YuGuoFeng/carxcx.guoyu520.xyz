@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'ed1c1e7fad6feaf68a7112f368cbbad796d5fbc2',
+        'reference' => 'eb59226cbb1ae02e4beaa109198c6a97e8ff3ab2',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -128,6 +128,15 @@
             'install_path' => __DIR__ . '/../dragonmantank/cron-expression',
             'aliases' => array(),
             'reference' => '7a8c6e56ab3ffcc538d05e8155bb42269abf1a0c',
+            'dev_requirement' => false,
+        ),
+        'easywechat-composer/easywechat-composer' => array(
+            'pretty_version' => '1.4.1',
+            'version' => '1.4.1.0',
+            'type' => 'composer-plugin',
+            'install_path' => __DIR__ . '/../easywechat-composer/easywechat-composer',
+            'aliases' => array(),
+            'reference' => '3fc6a7ab6d3853c0f4e2922539b56cc37ef361cd',
             'dev_requirement' => false,
         ),
         'egulias/email-validator' => array(
@@ -481,7 +490,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'ed1c1e7fad6feaf68a7112f368cbbad796d5fbc2',
+            'reference' => 'eb59226cbb1ae02e4beaa109198c6a97e8ff3ab2',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -607,6 +616,24 @@
             'reference' => '06e2ebd25f2869e54a306dda991f7db58066f7f6',
             'dev_requirement' => false,
         ),
+        'overtrue/socialite' => array(
+            'pretty_version' => '3.3.2',
+            'version' => '3.3.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../overtrue/socialite',
+            'aliases' => array(),
+            'reference' => '06bb38a3a5afb3619a81794c78f0add604ed6826',
+            'dev_requirement' => false,
+        ),
+        'overtrue/wechat' => array(
+            'pretty_version' => '5.7.6',
+            'version' => '5.7.6.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../overtrue/wechat',
+            'aliases' => array(),
+            'reference' => '48e858cdb5cbf706d617a4a2441f76530aabd544',
+            'dev_requirement' => false,
+        ),
         'phar-io/manifest' => array(
             'pretty_version' => '2.0.1',
             'version' => '2.0.1.0',
@@ -724,6 +751,30 @@
             'reference' => 'fb9b8333f14e3dce976a60ef6a7e05c7c7ed8bfb',
             'dev_requirement' => true,
         ),
+        'pimple/pimple' => array(
+            'pretty_version' => 'v3.4.0',
+            'version' => '3.4.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../pimple/pimple',
+            'aliases' => array(),
+            'reference' => '86406047271859ffc13424a048541f4531f53601',
+            'dev_requirement' => false,
+        ),
+        'psr/cache' => array(
+            'pretty_version' => '1.0.1',
+            'version' => '1.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/cache',
+            'aliases' => array(),
+            'reference' => 'd11b50ad223250cf17b86e38383413f5a6764bf8',
+            'dev_requirement' => false,
+        ),
+        'psr/cache-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0|2.0',
+            ),
+        ),
         'psr/container' => array(
             'pretty_version' => '1.1.1',
             'version' => '1.1.1.0',
@@ -811,8 +862,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '1.0.0',
+                0 => '1.0.0',
+                1 => '1.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -823,6 +874,12 @@
             'aliases' => array(),
             'reference' => '408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
             'dev_requirement' => false,
+        ),
+        'psr/simple-cache-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
+            ),
         ),
         'psy/psysh' => array(
             'pretty_version' => 'v0.10.8',
@@ -1028,6 +1085,30 @@
             'reference' => '15f7faf8508e04471f666633addacf54c0ab5933',
             'dev_requirement' => false,
         ),
+        'symfony/cache' => array(
+            'pretty_version' => 'v5.3.8',
+            'version' => '5.3.8.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/cache',
+            'aliases' => array(),
+            'reference' => '945bcebfef0aeef105de61843dd14105633ae38f',
+            'dev_requirement' => false,
+        ),
+        'symfony/cache-contracts' => array(
+            'pretty_version' => 'v2.4.0',
+            'version' => '2.4.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/cache-contracts',
+            'aliases' => array(),
+            'reference' => 'c0446463729b89dd4fa62e9aeecc80287323615d',
+            'dev_requirement' => false,
+        ),
+        'symfony/cache-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0|2.0',
+            ),
+        ),
         'symfony/console' => array(
             'pretty_version' => 'v5.3.2',
             'version' => '5.3.2.0',
@@ -1223,6 +1304,15 @@
             'reference' => '714b47f9196de61a196d86c4bad5f09201b307df',
             'dev_requirement' => false,
         ),
+        'symfony/psr-http-message-bridge' => array(
+            'pretty_version' => 'v2.1.1',
+            'version' => '2.1.1.0',
+            'type' => 'symfony-bridge',
+            'install_path' => __DIR__ . '/../symfony/psr-http-message-bridge',
+            'aliases' => array(),
+            'reference' => 'c9012994c4b4fb23e7c57dd86b763a417a04feba',
+            'dev_requirement' => false,
+        ),
         'symfony/routing' => array(
             'pretty_version' => 'v5.3.0',
             'version' => '5.3.0.0',
@@ -1281,6 +1371,15 @@
             'install_path' => __DIR__ . '/../symfony/var-dumper',
             'aliases' => array(),
             'reference' => '46aa709affb9ad3355bd7a810f9662d71025c384',
+            'dev_requirement' => false,
+        ),
+        'symfony/var-exporter' => array(
+            'pretty_version' => 'v5.3.8',
+            'version' => '5.3.8.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/var-exporter',
+            'aliases' => array(),
+            'reference' => 'a7604de14bcf472fe8e33f758e9e5b7bf07d3b91',
             'dev_requirement' => false,
         ),
         'theseer/tokenizer' => array(

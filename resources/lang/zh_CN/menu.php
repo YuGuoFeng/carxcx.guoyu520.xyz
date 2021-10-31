@@ -13,5 +13,8 @@ return [
         'extensions'    => '扩展',
         'scaffold'      => '代码生成器',
         'icons'         => '图标',
+        'wechat'        => '微信小程管理',
+        'wechat_user'   => '用户列表',
+        'wxqrcode'      => '扫码地点设置',
     ],
 ];

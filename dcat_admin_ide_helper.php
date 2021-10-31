@@ -42,26 +42,32 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection payload
      * @property Grid\Column|Collection exception
      * @property Grid\Column|Collection failed_at
+     * @property Grid\Column|Collection approach_number
+     * @property Grid\Column|Collection order_id
+     * @property Grid\Column|Collection mobile
+     * @property Grid\Column|Collection wl_company
+     * @property Grid\Column|Collection car_number
+     * @property Grid\Column|Collection trailer_number
+     * @property Grid\Column|Collection pay_time
+     * @property Grid\Column|Collection state
+     * @property Grid\Column|Collection pay_data
      * @property Grid\Column|Collection email
      * @property Grid\Column|Collection token
+     * @property Grid\Column|Collection access_id
+     * @property Grid\Column|Collection deleted_at
      * @property Grid\Column|Collection email_verified_at
      * @property Grid\Column|Collection u_id
      * @property Grid\Column|Collection serial_number
      * @property Grid\Column|Collection logistics_company
-     * @property Grid\Column|Collection car_number
      * @property Grid\Column|Collection heng_car_number
      * @property Grid\Column|Collection add_time
      * @property Grid\Column|Collection pay_state
-     * @property Grid\Column|Collection pay_time
      * @property Grid\Column|Collection location
      * @property Grid\Column|Collection lng
      * @property Grid\Column|Collection lat
-     * @property Grid\Column|Collection state
      * @property Grid\Column|Collection failure_time
      * @property Grid\Column|Collection radius
      * @property Grid\Column|Collection money
-     * @property Grid\Column|Collection update_time
-     * @property Grid\Column|Collection deleted_at
      * @property Grid\Column|Collection phone
      *
      * @method Grid\Column|Collection id(string $label = null)
@@ -95,26 +101,32 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection payload(string $label = null)
      * @method Grid\Column|Collection exception(string $label = null)
      * @method Grid\Column|Collection failed_at(string $label = null)
+     * @method Grid\Column|Collection approach_number(string $label = null)
+     * @method Grid\Column|Collection order_id(string $label = null)
+     * @method Grid\Column|Collection mobile(string $label = null)
+     * @method Grid\Column|Collection wl_company(string $label = null)
+     * @method Grid\Column|Collection car_number(string $label = null)
+     * @method Grid\Column|Collection trailer_number(string $label = null)
+     * @method Grid\Column|Collection pay_time(string $label = null)
+     * @method Grid\Column|Collection state(string $label = null)
+     * @method Grid\Column|Collection pay_data(string $label = null)
      * @method Grid\Column|Collection email(string $label = null)
      * @method Grid\Column|Collection token(string $label = null)
+     * @method Grid\Column|Collection access_id(string $label = null)
+     * @method Grid\Column|Collection deleted_at(string $label = null)
      * @method Grid\Column|Collection email_verified_at(string $label = null)
      * @method Grid\Column|Collection u_id(string $label = null)
      * @method Grid\Column|Collection serial_number(string $label = null)
      * @method Grid\Column|Collection logistics_company(string $label = null)
-     * @method Grid\Column|Collection car_number(string $label = null)
      * @method Grid\Column|Collection heng_car_number(string $label = null)
      * @method Grid\Column|Collection add_time(string $label = null)
      * @method Grid\Column|Collection pay_state(string $label = null)
-     * @method Grid\Column|Collection pay_time(string $label = null)
      * @method Grid\Column|Collection location(string $label = null)
      * @method Grid\Column|Collection lng(string $label = null)
      * @method Grid\Column|Collection lat(string $label = null)
-     * @method Grid\Column|Collection state(string $label = null)
      * @method Grid\Column|Collection failure_time(string $label = null)
      * @method Grid\Column|Collection radius(string $label = null)
      * @method Grid\Column|Collection money(string $label = null)
-     * @method Grid\Column|Collection update_time(string $label = null)
-     * @method Grid\Column|Collection deleted_at(string $label = null)
      * @method Grid\Column|Collection phone(string $label = null)
      */
     class Grid {}
@@ -153,26 +165,32 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection payload
      * @property Show\Field|Collection exception
      * @property Show\Field|Collection failed_at
+     * @property Show\Field|Collection approach_number
+     * @property Show\Field|Collection order_id
+     * @property Show\Field|Collection mobile
+     * @property Show\Field|Collection wl_company
+     * @property Show\Field|Collection car_number
+     * @property Show\Field|Collection trailer_number
+     * @property Show\Field|Collection pay_time
+     * @property Show\Field|Collection state
+     * @property Show\Field|Collection pay_data
      * @property Show\Field|Collection email
      * @property Show\Field|Collection token
+     * @property Show\Field|Collection access_id
+     * @property Show\Field|Collection deleted_at
      * @property Show\Field|Collection email_verified_at
      * @property Show\Field|Collection u_id
      * @property Show\Field|Collection serial_number
      * @property Show\Field|Collection logistics_company
-     * @property Show\Field|Collection car_number
      * @property Show\Field|Collection heng_car_number
      * @property Show\Field|Collection add_time
      * @property Show\Field|Collection pay_state
-     * @property Show\Field|Collection pay_time
      * @property Show\Field|Collection location
      * @property Show\Field|Collection lng
      * @property Show\Field|Collection lat
-     * @property Show\Field|Collection state
      * @property Show\Field|Collection failure_time
      * @property Show\Field|Collection radius
      * @property Show\Field|Collection money
-     * @property Show\Field|Collection update_time
-     * @property Show\Field|Collection deleted_at
      * @property Show\Field|Collection phone
      *
      * @method Show\Field|Collection id(string $label = null)
@@ -206,26 +224,32 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection payload(string $label = null)
      * @method Show\Field|Collection exception(string $label = null)
      * @method Show\Field|Collection failed_at(string $label = null)
+     * @method Show\Field|Collection approach_number(string $label = null)
+     * @method Show\Field|Collection order_id(string $label = null)
+     * @method Show\Field|Collection mobile(string $label = null)
+     * @method Show\Field|Collection wl_company(string $label = null)
+     * @method Show\Field|Collection car_number(string $label = null)
+     * @method Show\Field|Collection trailer_number(string $label = null)
+     * @method Show\Field|Collection pay_time(string $label = null)
+     * @method Show\Field|Collection state(string $label = null)
+     * @method Show\Field|Collection pay_data(string $label = null)
      * @method Show\Field|Collection email(string $label = null)
      * @method Show\Field|Collection token(string $label = null)
+     * @method Show\Field|Collection access_id(string $label = null)
+     * @method Show\Field|Collection deleted_at(string $label = null)
      * @method Show\Field|Collection email_verified_at(string $label = null)
      * @method Show\Field|Collection u_id(string $label = null)
      * @method Show\Field|Collection serial_number(string $label = null)
      * @method Show\Field|Collection logistics_company(string $label = null)
-     * @method Show\Field|Collection car_number(string $label = null)
      * @method Show\Field|Collection heng_car_number(string $label = null)
      * @method Show\Field|Collection add_time(string $label = null)
      * @method Show\Field|Collection pay_state(string $label = null)
-     * @method Show\Field|Collection pay_time(string $label = null)
      * @method Show\Field|Collection location(string $label = null)
      * @method Show\Field|Collection lng(string $label = null)
      * @method Show\Field|Collection lat(string $label = null)
-     * @method Show\Field|Collection state(string $label = null)
      * @method Show\Field|Collection failure_time(string $label = null)
      * @method Show\Field|Collection radius(string $label = null)
      * @method Show\Field|Collection money(string $label = null)
-     * @method Show\Field|Collection update_time(string $label = null)
-     * @method Show\Field|Collection deleted_at(string $label = null)
      * @method Show\Field|Collection phone(string $label = null)
      */
     class Show {}
