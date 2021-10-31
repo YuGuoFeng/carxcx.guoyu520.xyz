@@ -29,7 +29,7 @@ Route::group(['namespace'=>'Api'],function(){
         // 提交表单
         Route::post('form',[WxQrCodeController::class,'form']);
         // 获取小程序openid
-        Route::post('getWeiOpenId',[UserController::class,'getWeiOpenId']);
+        Route::get('getWeiOpenId',[UserController::class,'getWeiOpenId']);
 
     });
 
