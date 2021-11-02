@@ -29,6 +29,10 @@ class WechatServices
     public function getWeiOpenId(string $code){
         return $this->app->auth->session($code);
     }
+
+    public function decryptData($session, $iv, $encryptedData){
+        return $this->app->encryptor->decryptData($session, $iv, $encryptedData);
+    }
    
 }
 ?>

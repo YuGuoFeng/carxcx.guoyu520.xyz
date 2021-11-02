@@ -15,11 +15,36 @@ class UserController extends Controller
     // 获取小程序openid
     public function getWeiOpenId(Request $request){
 
-        $code = $request->get('code');
+        try{
+            $code = $request->get('code');
+            if($code == null){
+                throw new \Error('缺少code 值');
+            }
+            $data = (new ws)->getWeiOpenId($code);
 
-        $data = (new ws)->getWeiOpenId($code);
+            return r::rMsgData(200,'ok',$data); 
+        }catch(\Exception $e){
+            return r::tryMsg($e);
+        }
+    }
 
-        return r::rMsgData(200,'ok',$data);       
+    public function getTel(Request $request){
+
+        try{
+            $session = $request->get('session');
+            $iv = $request->get('iv');
+            $encryptedData = $request->get('encryptedData');
+
+
+            if($session == null){
+                throw new \Error('缺少code 值');
+            }
+            $data = (new ws)->decryptData($session, $iv, $encryptedData);
+
+            return r::rMsgData(200,'ok',$data); 
+        }catch(\Exception $e){
+            return r::tryMsg($e);
+        }
     }
 
 }
