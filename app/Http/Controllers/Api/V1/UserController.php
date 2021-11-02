@@ -31,9 +31,9 @@ class UserController extends Controller
     public function getTel(Request $request){
 
         try{
-            $session = $request->get('session');
-            $iv = $request->get('iv');
-            $encryptedData = $request->get('encryptedData');
+            $session = $request->session;
+            $iv = $request->iv;
+            $encryptedData = $request->encryptedData;
 
 
             if($session == null){

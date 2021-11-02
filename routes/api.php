@@ -31,7 +31,7 @@ Route::group(['namespace'=>'Api'],function(){
         // 获取小程序openid 
         Route::get('getWeiOpenId',[UserController::class,'getWeiOpenId']);
         // 获取微信手机号
-        Route::get('getTel',[UserController::class,'getTel']);
+        Route::post('getTel',[UserController::class,'getTel']);
 
     });
 
