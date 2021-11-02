@@ -19,10 +19,15 @@ class WechatServices
             'file' => __DIR__.'/wechat.log',
         ],
     ];
+    private $app;
+   
 
-    public function index(){
-        $app = Factory::miniProgram($this->config);
-        return $app;
+    public function __construct(){
+        $this->app = Factory::miniProgram($this->config);
+    }
+
+    public function getWeiOpenId(string $code){
+        return $this->app->auth->session($code);
     }
    
 }

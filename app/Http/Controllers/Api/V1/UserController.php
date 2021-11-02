@@ -15,7 +15,9 @@ class UserController extends Controller
     // 获取小程序openid
     public function getWeiOpenId(Request $request){
 
-        $data = (new ws)->index();
+        $code = $request->get('code');
+
+        $data = (new ws)->getWeiOpenId($code);
 
         return r::rMsgData(200,'ok',$data);       
     }
