@@ -23,7 +23,7 @@ class Order extends Migration
             $table->string('wl_company',200)->comment('物流公司');
             $table->string('car_number',200)->comment('车牌号');
             $table->string('trailer_number',200)->comment('挂车号');
-            $table->integer('pay_time',)->comment('支付时间');
+            $table->integer('pay_time')->default(0)->comment('支付时间');
             $table->tinyInteger('state')->default('0')->comment('支付状态   0=否  1=是');
             $table->string('pay_data',255)->nullable()->comment('微信支付信息');
             $table->timestamps();

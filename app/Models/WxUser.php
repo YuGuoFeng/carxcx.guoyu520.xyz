@@ -12,6 +12,12 @@ class WxUser extends Model
     use SoftDeletes;
 
     protected $table = 'wx_user';
-    public $timestamps = false;
+    // public $timestamps = false;
+    protected $fillable = [
+        'name',
+        'phone',
+        'avatar',
+        'add_time'
+    ];
 
 }
